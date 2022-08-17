@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CrackingTheCodeInterview.ArraysAndStrings
 {
@@ -16,6 +12,7 @@ namespace CrackingTheCodeInterview.ArraysAndStrings
         //Time:  O(n) where n is the length of the string.
         //Space: O(1) because char_set is constant.
         public static bool IsUnique(string str)
+
         {
             if (str.Length > 128) return false;
             bool[] char_set = new bool[128];
