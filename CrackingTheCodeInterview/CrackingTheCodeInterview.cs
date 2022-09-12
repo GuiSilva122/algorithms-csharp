@@ -7,7 +7,9 @@ namespace CrackingTheCodeInterview
         static void Main()
         {
             //Arrays and strings
-            IsUniqueQuestion.IsUniqueTest();
+            //IsUniqueQuestion.IsUniqueTest();
+
+            CheckPermutation.IsPermutationTest();
         }
     }
 }
