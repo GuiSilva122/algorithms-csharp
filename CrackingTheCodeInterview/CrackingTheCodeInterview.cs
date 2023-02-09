@@ -8,8 +8,8 @@ namespace CrackingTheCodeInterview
         {
             //Arrays and strings
             //IsUniqueQuestion.IsUniqueTest();
-
-            CheckPermutation.IsPermutationTest();
+            //CheckPermutation.IsPermutationTest();
+            URLify.TestSolution();
         }
     }
 }
