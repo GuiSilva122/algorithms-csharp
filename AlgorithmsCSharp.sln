@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32602.291
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoMania", "AlgoMania\AlgoMania.csproj", "{CEB072AB-3240-4D9E-86B1-DFDFD08F1547}"
 EndProject
@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProblemsEuler", "ProblemsEu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turing", "Turing\Turing.csproj", "{002E363F-8577-44A2-BABB-DBE618F8212A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrackingTheCodeInterview", "CrackingTheCodeInterview\CrackingTheCodeInterview.csproj", "{46CDC64C-6B97-4844-8DBF-59349FAD7D75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrackingTheCodeInterview", "CrackingTheCodeInterview\CrackingTheCodeInterview.csproj", "{46CDC64C-6B97-4844-8DBF-59349FAD7D75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoExpert", "AlgoExpert\AlgoExpert.csproj", "{670C06B3-75A3-4BEC-AA1B-36DDDA6DF0E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{46CDC64C-6B97-4844-8DBF-59349FAD7D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46CDC64C-6B97-4844-8DBF-59349FAD7D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46CDC64C-6B97-4844-8DBF-59349FAD7D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{670C06B3-75A3-4BEC-AA1B-36DDDA6DF0E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{670C06B3-75A3-4BEC-AA1B-36DDDA6DF0E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{670C06B3-75A3-4BEC-AA1B-36DDDA6DF0E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{670C06B3-75A3-4BEC-AA1B-36DDDA6DF0E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
