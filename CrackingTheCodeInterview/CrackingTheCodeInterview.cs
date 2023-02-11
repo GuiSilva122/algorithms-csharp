@@ -9,7 +9,9 @@ namespace CrackingTheCodeInterview
             //Arrays and strings
             //IsUniqueQuestion.IsUniqueTest();
             //CheckPermutation.IsPermutationTest();
-            URLify.TestSolution();
+            //URLify.TestSolution();
+            //PalindromePermutation.TestSolution();
+            OneWay.TestSolution();
         }
     }
 }
