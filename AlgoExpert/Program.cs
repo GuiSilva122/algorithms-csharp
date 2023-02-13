@@ -1,4 +1,5 @@
 ﻿using AlgoExpert;
 
 //SubSequence.TestSolution();
-SortedSquaredArray.TestSolution();
+//SortedSquaredArray.TestSolution();
+TournamentWinner.TestSolution();
