@@ -11,7 +11,9 @@ namespace CrackingTheCodeInterview
             //CheckPermutation.IsPermutationTest();
             //URLify.TestSolution();
             //PalindromePermutation.TestSolution();
-            OneWay.TestSolution();
+            //OneWay.TestSolution();
+            //StringCompression.TestSolution();
+            RotateMatrix.TestSolution();
         }
     }
 }

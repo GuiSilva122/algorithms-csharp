@@ -58,3 +58,62 @@ namespace AlgoMania
         }
     }
 }
+
+public class Program
+{
+    // This is the class of the input root. Do not edit it.
+    public class BinaryTree
+    {
+        public int value;
+        public BinaryTree left;
+        public BinaryTree right;
+
+        public BinaryTree(int value)
+        {
+            this.value = value;
+            this.left = null;
+            this.right = null;
+        }
+    }
+
+    public static List<int> BranchSums(BinaryTree root)
+    {
+        var stack = new Stack<(BinaryTree, int)>();
+        List<int> result = new List<int>();
+        stack.Push((root, root.value));
+
+        while (stack.Count > 0)
+        {
+            var (tree, sum) = stack.Pop();
+            if (tree.right != null)
+                stack.Push((tree.right, sum + tree.right.value));
+            if (tree.left != null)
+                stack.Push((tree.left, sum + tree.left.value));
+            if (tree.left == null && tree.right == null)
+                result.Add(sum);
+        }
+        return result;
+    }
+
+    public static List<int> BranchSums2(BinaryTree root)
+    {
+        List<int> result = new List<int>();
+        var stack = new Stack<(BinaryTree, int)>();
+        stack.Push((root, 0));
+        while (stack.Count > 0)
+        {
+            var (tree, sum) = stack.Pop();
+            var currentSum = sum + tree.value;
+
+            if (tree.left == null && tree.right == null)
+                result.Add(currentSum);
+
+            if (tree.right != null)
+                stack.Push((tree.right, currentSum));
+
+            if (tree.left != null)
+                stack.Push((tree.left, currentSum));
+        }
+        return result;
+    }
+}

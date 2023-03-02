@@ -122,19 +122,19 @@ namespace CrackingTheCodeInterview.ArraysAndStrings
         {
             string originalPhrase1 = "pale";
             string editedPhrase1 = "ple";
-            var result1 = IsOneEdit(originalPhrase1, editedPhrase1);
+            var result1 = IsOneEditAway(originalPhrase1, editedPhrase1);
 
             string originalPhrase2 = "pales";
             string editedPhrase2 = "pale";
-            var result2 = IsOneEdit(originalPhrase2, editedPhrase2);
+            var result2 = IsOneEditAway(originalPhrase2, editedPhrase2);
 
             string originalPhrase3 = "pale";
             string editedPhrase3 = "bale";
-            var result3 = IsOneEdit(originalPhrase3, editedPhrase3);
+            var result3 = IsOneEditAway(originalPhrase3, editedPhrase3);
 
             string originalPhrase4 = "pale";
             string editedPhrase4 = "bake";
-            var result4 = IsOneEdit(originalPhrase4, editedPhrase4);
+            var result4 = IsOneEditAway(originalPhrase4, editedPhrase4);
         }
     }
 }
