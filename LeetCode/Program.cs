@@ -1,0 +1,3 @@
+﻿using LeetCode;
+
+RomanToInt.TestSolution();
