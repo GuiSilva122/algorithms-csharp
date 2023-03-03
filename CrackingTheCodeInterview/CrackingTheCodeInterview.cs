@@ -13,7 +13,8 @@ namespace CrackingTheCodeInterview
             //PalindromePermutation.TestSolution();
             //OneWay.TestSolution();
             //StringCompression.TestSolution();
-            RotateMatrix.TestSolution();
+            //RotateMatrix.TestSolution();
+            ZeroMatrix.TestSolution();
         }
     }
 }
