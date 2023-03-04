@@ -14,7 +14,8 @@ namespace CrackingTheCodeInterview
             //OneWay.TestSolution();
             //StringCompression.TestSolution();
             //RotateMatrix.TestSolution();
-            ZeroMatrix.TestSolution();
+            //ZeroMatrix.TestSolution();
+            StringRotation.TestSolution();
         }
     }
 }
