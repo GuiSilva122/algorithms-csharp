@@ -18,6 +18,7 @@ namespace CrackingTheCodeInterview
             //ZeroMatrix.TestSolution();
             //StringRotation.TestSolution();
             RemoveDups.TestSolution();
+            ReturnKthToLast.TestSolution();
         }
     }
 }
