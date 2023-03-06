@@ -2,4 +2,5 @@
 
 //SubSequence.TestSolution();
 //SortedSquaredArray.TestSolution();
-TournamentWinner.TestSolution();
+//TournamentWinner.TestSolution();
+ClassPhotos.TestSolution();

@@ -1,4 +1,5 @@
 ﻿using LeetCode;
 
 //RomanToInt.TestSolution();
-PalindromeSingleLinkedList.TestSolution();
+//PalindromeSingleLinkedList.TestSolution();
+LongestCommonPrefix.TestSolution();
