@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CrackingTheCodeInterview.Helpers
+namespace CrackingTheCodeInterview.ArraysAndStrings.Helpers
 {
     internal class MatrixHelper
     {

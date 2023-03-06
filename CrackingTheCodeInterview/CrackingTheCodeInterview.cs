@@ -1,4 +1,5 @@
 ﻿using CrackingTheCodeInterview.ArraysAndStrings;
+using CrackingTheCodeInterview.LinkedLists;
 
 namespace CrackingTheCodeInterview
 {
@@ -15,7 +16,8 @@ namespace CrackingTheCodeInterview
             //StringCompression.TestSolution();
             //RotateMatrix.TestSolution();
             //ZeroMatrix.TestSolution();
-            StringRotation.TestSolution();
+            //StringRotation.TestSolution();
+            RemoveDups.TestSolution();
         }
     }
 }

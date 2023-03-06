@@ -1,4 +1,4 @@
-﻿using CrackingTheCodeInterview.Helpers;
+﻿using CrackingTheCodeInterview.ArraysAndStrings.Helpers;
 using System;
 
 namespace CrackingTheCodeInterview.ArraysAndStrings
