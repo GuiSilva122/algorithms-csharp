@@ -1,20 +1,21 @@
-﻿using Microsoft.VisualBasic;
-using System.Security.Cryptography;
-
-namespace LeetCode
+﻿namespace LeetCode
 {
     internal class LongestCommonPrefix
-    {   
+    {
+        // Time complexity : O(S),  where S is the sum of all characters in all strings.
+        // Space complexity : O(1), We only used constant extra space.
+        // Horizontal Scaling
         public static string GetLongestCommonPrefix(string[] strs)
         {
-            if (strs.Length == 0) return "";
-            string prefix = strs[0];
+            if (strs == null || strs.Length == 0) return "";
+            var prefix = strs[0];
             for (int i = 1; i < strs.Length; i++)
             {
                 while (strs[i].IndexOf(prefix) != 0)
                 {
                     prefix = prefix.Substring(0, prefix.Length - 1);
-                    if (string.IsNullOrEmpty(prefix)) 
+
+                    if (string.IsNullOrEmpty(prefix))
                         return "";
                 }
             }
