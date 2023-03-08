@@ -1,6 +1,5 @@
 ﻿using CrackingTheCodeInterview.LinkedLists.Helpers;
 using System;
-
 namespace CrackingTheCodeInterview.LinkedLists
 {
     public class DeleteMiddleNode
