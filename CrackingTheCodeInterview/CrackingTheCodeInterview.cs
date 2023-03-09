@@ -7,7 +7,7 @@ namespace CrackingTheCodeInterview
     {
         static void Main()
         {
-            //Arrays and strings
+            // Arrays and strings
             //IsUniqueQuestion.IsUniqueTest();
             //CheckPermutation.IsPermutationTest();
             //URLify.TestSolution();
@@ -17,9 +17,12 @@ namespace CrackingTheCodeInterview
             //RotateMatrix.TestSolution();
             //ZeroMatrix.TestSolution();
             //StringRotation.TestSolution();
+            
+            // LinkedLists
             //RemoveDups.TestSolution();
             //ReturnKthToLast.TestSolution();
-            DeleteMiddleNode.TestSolution();
+            //DeleteMiddleNode.TestSolution();
+            Partition.TestSolution();
         }
     }
 }

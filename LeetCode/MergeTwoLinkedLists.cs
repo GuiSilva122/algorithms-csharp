@@ -42,6 +42,7 @@ namespace LeetCode
             }
         }
 
+        // time O(m + n), space O(1)
         public static ListNode MergeTwoListsV2(ListNode l1, ListNode l2)
         {
             ListNode merged = new ListNode();
