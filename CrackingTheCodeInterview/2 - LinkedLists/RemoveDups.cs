@@ -1,7 +1,6 @@
 ﻿using CrackingTheCodeInterview.LinkedLists.Helpers;
 using System;
 using System.Collections.Generic;
-using System.Security.AccessControl;
 
 namespace CrackingTheCodeInterview.LinkedLists
 {
@@ -25,7 +24,7 @@ namespace CrackingTheCodeInterview.LinkedLists
             }
         }
 
-        // O(n²) time, O(1) space
+        // O(n) time, O(1) space
         public static void DeleteDupsV2(LinkedListNode linkedList)
         {
             var current = linkedList;
@@ -40,6 +39,20 @@ namespace CrackingTheCodeInterview.LinkedLists
                         runner = runner.next;
                 }
                 current = current.next;
+            }
+        }
+
+        public static void DeleteDupsV3(LinkedListNode linkedList)
+        {
+            var current = linkedList;
+            while (current != null)
+            {
+                var nextDistinctNode = current.next;
+                while (nextDistinctNode != null && current.data == nextDistinctNode.data)
+                    nextDistinctNode = nextDistinctNode.next;
+
+                current.next = nextDistinctNode;
+                current = nextDistinctNode;
             }
         }
 

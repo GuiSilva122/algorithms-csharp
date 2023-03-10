@@ -22,7 +22,8 @@ namespace CrackingTheCodeInterview
             //RemoveDups.TestSolution();
             //ReturnKthToLast.TestSolution();
             //DeleteMiddleNode.TestSolution();
-            Partition.TestSolution();
+            //Partition.TestSolution();
+            SumLists.TestSolution();
         }
     }
 }
