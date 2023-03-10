@@ -23,7 +23,8 @@ namespace CrackingTheCodeInterview
             //ReturnKthToLast.TestSolution();
             //DeleteMiddleNode.TestSolution();
             //Partition.TestSolution();
-            SumLists.TestSolution();
+            //SumLists.TestSolution();
+            Palindrome.TestSolution();
         }
     }
 }
