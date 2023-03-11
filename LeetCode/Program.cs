@@ -5,4 +5,5 @@
 //LongestCommonPrefix.TestSolution();
 //MergeTwoLinkedLists.TestSolution();
 //RemoveDuplicatesFromSortedArray.TestSolution();
-RemoveElement.TestSolution();
+//RemoveElement.TestSolution();
+SearchInsertPosition.TestSolution();
