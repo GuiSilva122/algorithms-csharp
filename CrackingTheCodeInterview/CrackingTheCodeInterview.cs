@@ -24,7 +24,10 @@ namespace CrackingTheCodeInterview
             //DeleteMiddleNode.TestSolution();
             //Partition.TestSolution();
             //SumLists.TestSolution();
-            Palindrome.TestSolution();
+            //Palindrome.TestSolution();
+            //Intersection.TestSolution();
+            
+            LoopDetection.TestSolution();
         }
     }
 }
