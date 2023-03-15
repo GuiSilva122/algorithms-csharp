@@ -27,16 +27,16 @@ namespace CrackingTheCodeInterview.LinkedLists
 
         private static LinkedListNode ReverseAndClone(LinkedListNode head)
         {
-            LinkedListNode newListHead = null;
-
-            while (head != null)
+            var current = head;
+            LinkedListNode newList = null;
+            while (current != null)
             {
-                var newNode = new LinkedListNode(head.data);
-                newNode.next = newListHead;
-                newListHead = newNode;
-                head = head.next;
+                var newNode = new LinkedListNode(current.data);
+                newNode.next = newList;
+                newList = newNode;
+                current = current.next;
             }
-            return newListHead;
+            return newList;
         }
 
         private static LinkedListNode ReverseAndCloneRecursive(LinkedListNode head)
@@ -44,11 +44,11 @@ namespace CrackingTheCodeInterview.LinkedLists
             if (head == null || head.next == null)
                 return head;
 
-            LinkedListNode newHeadNode = ReverseAndCloneRecursive(head.next);
+            var p = ReverseAndCloneRecursive(head.next);
             head.next.next = head;
             head.next = null;
-
-            return newHeadNode;
+            
+            return p;
         }
 
         #endregion
@@ -127,11 +127,21 @@ namespace CrackingTheCodeInterview.LinkedLists
 
         public static void TestSolution()
         {
+            //var lA1 = new LinkedListNode(1, null, null);
+            //var lA2 = new LinkedListNode(2, null, lA1);
+            //var lA3 = new LinkedListNode(3, null, lA2);
+            //var lA4 = new LinkedListNode(2, null, lA3);
+            //var lA5 = new LinkedListNode(1, null, lA4);
+
             var lA1 = new LinkedListNode(1, null, null);
             var lA2 = new LinkedListNode(2, null, lA1);
             var lA3 = new LinkedListNode(3, null, lA2);
-            var lA4 = new LinkedListNode(2, null, lA3);
-            var lA5 = new LinkedListNode(1, null, lA4);
+            var lA4 = new LinkedListNode(4, null, lA3);
+            var lA5 = new LinkedListNode(5, null, lA4);
+            
+            Console.WriteLine(lA1.PrintForward());
+            var reversed = ReverseAndCloneRecursive(lA1);
+            Console.WriteLine(reversed.PrintForward());
 
             Console.WriteLine(lA1.PrintForward());
             var isPalindrome = IsPalindromeV3(lA1);
