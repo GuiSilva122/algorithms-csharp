@@ -6,4 +6,5 @@
 //MergeTwoLinkedLists.TestSolution();
 //RemoveDuplicatesFromSortedArray.TestSolution();
 //RemoveElement.TestSolution();
-SearchInsertPosition.TestSolution();
+//SearchInsertPosition.TestSolution();
+AddBinary.TestSolution();

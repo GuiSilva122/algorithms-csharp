@@ -1,5 +1,6 @@
 ﻿using CrackingTheCodeInterview.ArraysAndStrings;
 using CrackingTheCodeInterview.LinkedLists;
+using CrackingTheCodeInterview.StaksAndQueues;
 
 namespace CrackingTheCodeInterview
 {
@@ -17,17 +18,19 @@ namespace CrackingTheCodeInterview
             //RotateMatrix.TestSolution();
             //ZeroMatrix.TestSolution();
             //StringRotation.TestSolution();
-            
+
             // LinkedLists
             //RemoveDups.TestSolution();
             //ReturnKthToLast.TestSolution();
             //DeleteMiddleNode.TestSolution();
             //Partition.TestSolution();
             //SumLists.TestSolution();
-            Palindrome.TestSolution();
-            //Intersection.TestSolution();
-            
+            //Palindrome.TestSolution();
+            //Intersection.TestSolution();            
             //LoopDetection.TestSolution();
+
+            // Queues and Stacks
+            ThreeInOne.TestSolution();
         }
     }
 }
