@@ -1,8 +1,7 @@
 ﻿using CrackingTheCodeInterview.ArraysAndStrings;
 using CrackingTheCodeInterview.LinkedLists;
 using CrackingTheCodeInterview.StaksAndQueues;
-using System.Reflection.Metadata;
-using System.Threading.Tasks;
+
 
 namespace CrackingTheCodeInterview
 {
@@ -33,6 +32,7 @@ namespace CrackingTheCodeInterview
 
             // Queues and Stacks
             //ThreeInOne.TestSolution();
+            SortStack.TestSolution();
         }
     }
 }
