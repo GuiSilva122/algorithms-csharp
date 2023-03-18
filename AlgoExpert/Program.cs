@@ -3,4 +3,5 @@
 //SubSequence.TestSolution();
 //SortedSquaredArray.TestSolution();
 //TournamentWinner.TestSolution();
-ClassPhotos.TestSolution();
+//ClassPhotos.TestSolution();
+StringIsPalindrome.TestSolution();
