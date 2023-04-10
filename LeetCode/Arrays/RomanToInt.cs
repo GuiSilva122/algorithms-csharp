@@ -1,4 +1,4 @@
-﻿namespace LeetCode
+﻿namespace LeetCode.Arrays
 {
     internal class RomanToInt
     {
@@ -27,7 +27,7 @@
 
                 if (currentValue < nextValue)
                 {
-                    converted += (nextValue - currentValue);
+                    converted += nextValue - currentValue;
                     i++;
                 }
                 else

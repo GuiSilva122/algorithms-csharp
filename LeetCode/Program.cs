@@ -1,4 +1,4 @@
-﻿using LeetCode;
+﻿using LeetCode.Arrays;
 
 //RomanToInt.TestSolution();
 //PalindromeSingleLinkedList.TestSolution();

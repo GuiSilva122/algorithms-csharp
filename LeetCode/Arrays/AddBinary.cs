@@ -1,12 +1,12 @@
 ﻿using System.Numerics;
 using System.Text;
 
-namespace LeetCode
+namespace LeetCode.Arrays
 {
     public static class AddBinary
     {
-        public static string AddV1(string a, string b) 
-            => Convert.ToString((Convert.ToInt32(a, 2) + Convert.ToInt32(b, 2)), 2);
+        public static string AddV1(string a, string b)
+            => Convert.ToString(Convert.ToInt32(a, 2) + Convert.ToInt32(b, 2), 2);
 
         public static string AddV2(string a, string b)
         {
@@ -34,7 +34,7 @@ namespace LeetCode
 
                 carry /= 2;
             }
-            
+
             if (carry == 1)
                 sum.Append('1');
 

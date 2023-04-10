@@ -1,6 +1,4 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace LeetCode
+﻿namespace LeetCode.LinkedList
 {
     public class ListNode
     {
@@ -69,12 +67,12 @@ namespace LeetCode
         {
             var head1 = new ListNode(1, new ListNode(2, new ListNode(4)));
             var head2 = new ListNode(1, new ListNode(3, new ListNode(4)));
-            Console.WriteLine($"list 1 = { head1.PrintForward() }");
-            Console.WriteLine($"list 2 = { head2.PrintForward() }");
-            
+            Console.WriteLine($"list 1 = {head1.PrintForward()}");
+            Console.WriteLine($"list 2 = {head2.PrintForward()}");
+
             var result = MergeTwoListsV2(head1, head2);
 
-            Console.WriteLine($"result = { result.PrintForward() }");
+            Console.WriteLine($"result = {result.PrintForward()}");
         }
     }
 }

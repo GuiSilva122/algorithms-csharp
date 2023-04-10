@@ -1,4 +1,4 @@
-﻿namespace LeetCode
+﻿namespace LeetCode.Mathematics
 {
     public static class Sqrtx
     {
@@ -59,12 +59,12 @@
         // O(log n) time, O(1) space
         public static int MySqrtV4(int x)
         {
-            if (x < 2) 
+            if (x < 2)
                 return x;
 
             double x0 = x;
             double x1 = (x0 + x / x0) / 2.0;
-            
+
             while (Math.Abs(x0 - x1) >= 1)
             {
                 x0 = x1;

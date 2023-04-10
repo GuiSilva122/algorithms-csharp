@@ -1,4 +1,4 @@
-﻿namespace LeetCode
+﻿namespace LeetCode.Arrays
 {
     public class RemoveElement
     {
@@ -18,7 +18,7 @@
 
         public static void TestSolution()
         {
-            var nums = new int[] { 3, 2, 2, 3};
+            var nums = new int[] { 3, 2, 2, 3 };
             var result = RemoveElementFromArray(nums, 3);
         }
     }

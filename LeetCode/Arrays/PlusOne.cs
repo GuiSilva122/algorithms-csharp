@@ -1,11 +1,11 @@
-﻿namespace LeetCode
+﻿namespace LeetCode.Arrays
 {
     public class PlusOne
     {
         public static int[] AddOne(int[] digits)
         {
             int length = digits.Length;
-            for (int i = length - 1; i >= 0; i--) 
+            for (int i = length - 1; i >= 0; i--)
             {
                 if (digits[i] == 9)
                     digits[i] = 0;

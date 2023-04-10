@@ -1,4 +1,4 @@
-﻿namespace LeetCode
+﻿namespace LeetCode.Recursion
 {
     public static class ClimbStairs
     {
@@ -12,10 +12,10 @@
 
         private static int ClimbStairsV1(int totalSteps, int currentStep)
         {
-            if (currentStep > totalSteps) 
+            if (currentStep > totalSteps)
                 return 0;
 
-            if (currentStep == totalSteps) 
+            if (currentStep == totalSteps)
                 return 1;
 
             return ClimbStairsV1(totalSteps, currentStep + 1) + ClimbStairsV1(totalSteps, currentStep + 2);
@@ -56,7 +56,7 @@
             dp[2] = 2;
             for (int i = 3; i <= n; i++)
                 dp[i] = dp[i - 1] + dp[i - 2];
-            
+
             return dp[n];
         }
 
