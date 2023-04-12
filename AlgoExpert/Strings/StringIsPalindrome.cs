@@ -1,4 +1,4 @@
-﻿namespace AlgoExpert
+﻿namespace AlgoExpert.Strings
 {
     public static class StringIsPalindrome
     {
@@ -7,7 +7,7 @@
             if (str.Length == 1) return true;
 
             int comparisons = str.Length / 2;
-            if (str.Length % 2 != 0 && comparisons > 1) 
+            if (str.Length % 2 != 0 && comparisons > 1)
                 comparisons--;
 
             int i = 0;
@@ -25,7 +25,7 @@
             string str = "abb";
             var expected = false;
             var result = IsPalindrome(str);
-            
+
             Console.WriteLine($"str = {str}, expected = {expected}, result = {result}");
         }
     }

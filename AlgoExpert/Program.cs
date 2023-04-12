@@ -1,7 +1,8 @@
-﻿using AlgoExpert;
+﻿using AlgoExpert.Strings;
 
 //SubSequence.TestSolution();
 //SortedSquaredArray.TestSolution();
 //TournamentWinner.TestSolution();
 //ClassPhotos.TestSolution();
-StringIsPalindrome.TestSolution();
+//StringIsPalindrome.TestSolution();
+RunLengthEncoding.TestSolution();

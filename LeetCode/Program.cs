@@ -1,4 +1,5 @@
-﻿using LeetCode.Arrays;
+﻿using LeetCode._75;
+using LeetCode.Arrays;
 
 //RomanToInt.TestSolution();
 //PalindromeSingleLinkedList.TestSolution();
@@ -7,4 +8,5 @@
 //RemoveDuplicatesFromSortedArray.TestSolution();
 //RemoveElement.TestSolution();
 //SearchInsertPosition.TestSolution();
-AddBinary.TestSolution();
+//AddBinary.TestSolution();
+IsSubSequence.TestSolution();
