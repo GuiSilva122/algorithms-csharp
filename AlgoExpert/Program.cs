@@ -5,4 +5,5 @@
 //TournamentWinner.TestSolution();
 //ClassPhotos.TestSolution();
 //StringIsPalindrome.TestSolution();
-RunLengthEncoding.TestSolution();
+//RunLengthEncoding.TestSolution();
+CommonCharacters.TestSolution();
