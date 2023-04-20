@@ -1,6 +1,6 @@
 ﻿namespace LeetCode._75
 {
-    public class IsSubSequence
+    public class String_IsSubSequence
     {
         private static string source;
         private static string target;

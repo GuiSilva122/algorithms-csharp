@@ -3,7 +3,7 @@ using System.Text;
 
 namespace LeetCode._75
 {
-    public class IsomorphicString
+    public class String_IsomorphicString
     {
         // O(n) time, O(1) space
         public bool IsIsomorphicV1(string s, string t)

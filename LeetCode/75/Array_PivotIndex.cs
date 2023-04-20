@@ -1,6 +1,6 @@
 ﻿namespace LeetCode._75
 {
-    public class PivotIndex
+    public class Array_PivotIndex
     {
         public int FindPivotIndex(int[] nums)
         {
