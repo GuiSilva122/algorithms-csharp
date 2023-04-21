@@ -16,4 +16,5 @@ using LeetCode.Arrays;
 //String_IsSubSequence.TestSolution();
 
 //LinkedList_MergeTwoLists.TestSolution();
-LinkedList_Reverse.TestSolution();
+//LinkedList_Reverse.TestSolution();
+Array_BinarySearch_FirstBadVersion.TestSolution();
