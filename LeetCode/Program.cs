@@ -17,4 +17,5 @@ using LeetCode.Arrays;
 
 //LinkedList_MergeTwoLists.TestSolution();
 //LinkedList_Reverse.TestSolution();
-Array_BinarySearch_FirstBadVersion.TestSolution();
+//Array_BinarySearch_FirstBadVersion.TestSolution();
+String_FindAllAnagrams.TestSolution();

@@ -15,7 +15,7 @@ namespace LeetCode._75
                 if (fast == slow)
                     break;
             }
-            if (fast != null && fast.next != null)
+            if (fast == null || fast.next == null)
                 return null;
 
             slow = head;
