@@ -26,7 +26,7 @@ namespace LeetCode._75
                 return head;
 
             var p = ReverseV2(head.next);
-            head.next.next = head; ;
+            head.next.next = head;
             head.next = null;
             return p;
         }
