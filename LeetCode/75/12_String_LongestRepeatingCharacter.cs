@@ -4,7 +4,7 @@
     {
         // Sliding Window + Binary Search
         // O(n log n) time, O(m) space, where m is the number of unique characters (26)
-        public int CharacterReplacement(string s, int k)
+        public int CharacterReplacementV1(string s, int k)
         {
             // binary search over the length of substring
             // lo contains the valid value, and hi contains the invalid value
@@ -96,7 +96,7 @@
             => end + 1 - start - count <= k;
 
         // O(n) time, O(m) space, where m is the number of unique characters (26)
-        public int CharacterReplacementV3(string s, int k)
+        public static int CharacterReplacementV3(string s, int k)
         {
             int start = 0;
             int[] frequencyMap = new int[26];
@@ -126,6 +126,13 @@
                 longestSubstringLength = end + 1 - start;
             }
             return longestSubstringLength;
+        }
+
+        public static void TestSolution()
+        {
+            var s = "AABABBA";
+            var k = 1;
+            var result = CharacterReplacementV3(s, k);
         }
     }
 }

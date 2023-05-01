@@ -24,7 +24,7 @@
         }
 
         // Tabulation bottom up
-        // O(n + m) time, O(n + m) space
+        // O(n * m) time, O(n + m) space
         public int UniquePathsV3(int m, int n)
         {
             if (m == 0 || n == 0) return 0;

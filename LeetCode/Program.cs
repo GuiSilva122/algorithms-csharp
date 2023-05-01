@@ -18,4 +18,6 @@ using LeetCode.Arrays;
 //LinkedList_MergeTwoLists.TestSolution();
 //LinkedList_Reverse.TestSolution();
 //Array_BinarySearch_FirstBadVersion.TestSolution();
-String_FindAllAnagrams.TestSolution();
+//SlidingWindow_FindAllAnagrams.TestSolution();
+//String_LongestRepeatingCharacter.TestSolution();
+HashMap_BullsAndCows.TestSolution();
