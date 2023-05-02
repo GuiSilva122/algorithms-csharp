@@ -1,4 +1,4 @@
-﻿using System.Xml.Linq;
+﻿using System;
 
 namespace LeetCode._75
 {
@@ -41,7 +41,7 @@ namespace LeetCode._75
             stoneList.Sort();
 
             while (stoneList.Count > 1)
-            {                
+            {
                 int stone1 = stoneList[stoneList.Count - 1];
                 stoneList.RemoveAt(stoneList.Count - 1);
 
@@ -63,7 +63,7 @@ namespace LeetCode._75
 
         // Heap-Based Simulation
         // O(n logn) time, O(n) space
-        public int LastStoneWeightV3(int[] stones)
+        public static int LastStoneWeightV3(int[] stones)
         {
             var heap = new PriorityQueue<int, int>(Comparer<int>.Create((x, y) => y - x));
             foreach (var stone in stones)
@@ -80,6 +80,31 @@ namespace LeetCode._75
                 }
             }
             return heap.Count <= 0 ? 0 : heap.Dequeue();
+        }
+
+        private static int BinarySearch(int[] row)
+        {
+            int low = 0;
+            int high = row.Length;
+            while (low < high)
+            {
+                int mid = low + (high - low) / 2;
+                if (row[mid] == 1)
+                {
+                    low = mid + 1;
+                }
+                else
+                {
+                    high = mid;
+                }
+            }
+            return low;
+        }
+
+        public static void TestSolution()
+        {
+            var stones = new int[] { 2, 7, 4, 1, 8, 1 };
+            var result = LastStoneWeightV3(stones);
         }
     }
 }
