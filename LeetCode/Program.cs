@@ -1,5 +1,6 @@
 ﻿using LeetCode._75;
 using LeetCode.Arrays;
+using LeetCode.Heap;
 
 //RomanToInt.TestSolution();
 
@@ -23,3 +24,9 @@ using LeetCode.Arrays;
 //HashMap_BullsAndCows.TestSolution();
 //Heap_LastStoneWeight.TestSolution();
 //Heap_TopKFrequentWords.TestSolution();
+
+//Tree_ValidateBST.TestSolution();
+//KthLargestElementInArray.TestSolution();
+//KthSmallestElementInSortedMatrix.TestSolution();
+//MeetingsRooms.TestSolution();
+KClosestPointsToOrigin.TestSolution();
