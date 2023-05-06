@@ -4,6 +4,9 @@ namespace LeetCode._75
 {
     public class Stack_DecodeString
     {
+        // Given maxK is the maximum value of k and countK is the count of nested k values
+        // n is the maximum length of encoded string
+        // O(maxK^(count K) n) time, O(sum(maxK^(countK)n))
         public string DecodeStringV1(string s)
         {
             var stack = new Stack<char>();
@@ -45,7 +48,7 @@ namespace LeetCode._75
         // Assume, n is the length of the string s.
         // O(maxK * n) time, where max K is the maximum value of k
         // O(m + n) space, where m is the number of letters(a-z) and n is the number of digits(0-9) in string s
-        public string DecodeStringV2(string s)
+        public static string DecodeStringV2(string s)
         {
             var countStack = new Stack<int>();
             var stringStack = new Stack<StringBuilder>();
@@ -80,7 +83,7 @@ namespace LeetCode._75
 
         // Assume, n is the length of the string s.
         // O(maxK * n) time, where max K is the maximum value of k
-        // O(m + n) space, where m is the number of letters(a-z) and n is the number of digits(0-9) in string s
+        // O(n) space, where m is the number of letters(a-z) and n is the number of digits(0-9) in string s
         private static int index = 0;
         public static string DecodeStringV3(string s)
         {
@@ -94,7 +97,7 @@ namespace LeetCode._75
                     int k = 0;
                     while (index < s.Length && char.IsDigit(s[index]))
                         k = k * 10 + s[index++] - '0';   
-                    index++; // ignore the closing bracket ']'
+                    index++; // ignore the opening bracket '['
                     string decodedString = DecodeStringV3(s);
                     index++; // ignore the closing bracket ']'
                     while (k-- > 0)
@@ -102,6 +105,12 @@ namespace LeetCode._75
                 }
             }
             return result.ToString();
+        }
+
+        public static void TestSolution()
+        {
+            var s = "3[a]2[bc]";
+            var result = DecodeStringV2(s);
         }
     }
 }

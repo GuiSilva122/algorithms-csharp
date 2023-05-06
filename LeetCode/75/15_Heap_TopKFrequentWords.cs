@@ -1,4 +1,7 @@
-﻿namespace LeetCode._75
+﻿using static LeetCode._75.Heap_TopKFrequentWords;
+using System.Diagnostics.Metrics;
+
+namespace LeetCode._75
 {
     public class Heap_TopKFrequentWords
     {
@@ -21,46 +24,30 @@
 
         // Max Heap
         // O(n + klogn) time, O(n) space
-        public class Word : IComparable<Word>
+        public IList<string> TopKFrequentV2(string[] words, int k)
         {
-            public string word;
-            public int count;
-            public Word(string word, int count)
+            var count = new Dictionary<string, int>();
+            foreach (var word in words)
             {
-                this.word = word;
-                this.count = count;
-            }
-
-            public int CompareTo(Word? other)
-            {
-                if (count == other.count)
-                    return word.CompareTo(other.word);
-                return other.count - count;
-            }
-        }
-        public static IList<string> TopKFrequentV2(string[] words, int k)
-        {
-            var cnt = new Dictionary<string, int>();
-            foreach (string word in words)
-            {
-                if (!cnt.ContainsKey(word))
-                    cnt.Add(word, 1);
+                if (!count.ContainsKey(word))
+                    count.Add(word, 1);
                 else
-                    cnt[word]++;
+                    count[word]++;
             }
+            var comparer = Comparer<(string, int)>.Create((a, b) => {
+                var (word1, count1) = a;
+                var (word2, count2) = b;
+                if (count1 == count2) return word1.CompareTo(word2);
+                return count2 - count1;
+            });
+            var maxHeap = new PriorityQueue<string, (string, int)>(comparer);
+            foreach (var entry in count)
+                maxHeap.Enqueue(entry.Key, (entry.Key, entry.Value));
 
-            var heap = new PriorityQueue<Word, Word>();
-            foreach (var entry in cnt)
-            {
-                var candidate = new Word(entry.Key, entry.Value);
-                heap.Enqueue(candidate, candidate);
-            }
-
-            var res = new List<string>();
+            var result = new List<string>();
             for (int i = 0; i < k; i++)
-                res.Add(heap.Dequeue().word);
-
-            return res;
+                result.Add(maxHeap.Dequeue());
+            return result;
         }
 
         // Min Heap

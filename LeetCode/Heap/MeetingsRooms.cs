@@ -2,6 +2,7 @@
 {
     public class MeetingsRooms
     {
+        // O (N log N) time, O(N) space
         public static int MinMeetingRooms(int[][] intervals)
         {
             if (intervals.Length == 0) return 0;
