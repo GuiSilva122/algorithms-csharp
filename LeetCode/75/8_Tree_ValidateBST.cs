@@ -64,14 +64,5 @@
             var root = new TreeNode(4, left, right);
             var result = IsValidBSTV2(root);
         }
-
-        private bool IsPangram(string sentence)
-        {
-            int[] frequencyCount = new int[26];
-            foreach (char c in sentence)
-                frequencyCount[c - 'a']++;
-
-            foreach (int count)
-        }
     }
 }
