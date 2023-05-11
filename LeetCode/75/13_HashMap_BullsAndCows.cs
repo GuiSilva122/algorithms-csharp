@@ -29,7 +29,6 @@
         public static void TestSolution()
         {
             var secret = "1949";
-            secret.Substring
             var guess =  "4422";
             var result = GetHint(secret, guess);
         }

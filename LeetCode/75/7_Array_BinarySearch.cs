@@ -2,6 +2,7 @@
 {
     public class Array_BinarySearch
     {
+        // https://leetcode.com/problems/binary-search/
         // O(log(n)) time, O(1) space
         public int Search(int[] nums, int target)
         {
