@@ -21,5 +21,25 @@
                 if (column + 1 < image[row].Length) DeepFirstSearch(image, row, column + 1, color, newColor);
             }
         }
+
+        public int MaxNumberOfBalloons(string text)
+        {
+            int bCount = 0, aCount = 0, lCount = 0, oCount = 0, nCount = 0;
+            foreach (var c in text)
+            {
+                _ = c switch
+                {
+                    'b' => bCount++,
+                    'a' => aCount++,
+                    'l' => lCount++,
+                    'o' => oCount++,
+                    'n' => nCount++,
+                    _ => 0
+                };
+            }
+            lCount /= 2;
+            oCount /= oCount;
+            return Math.Min(bCount, Math.Min(aCount, Math.Min(lCount, Math.Min(oCount, nCount))));
+        }
     }
 }

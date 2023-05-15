@@ -1,4 +1,6 @@
-﻿namespace LeetCode._75
+﻿using System.Text;
+
+namespace LeetCode._75
 {
     public class Tree_ValidateBST
     {
