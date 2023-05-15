@@ -4,7 +4,7 @@ namespace LeetCode._75
 {
     public class LinkedList_SortLinkedList
     {
-        public ListNode SortList(ListNode head)
+        public static ListNode SortList(ListNode head)
         {
             if (head == null || head.next == null)
                 return head;
@@ -14,7 +14,7 @@ namespace LeetCode._75
             return Merge(left, right);
         }
 
-        private ListNode Merge(ListNode list1, ListNode list2)
+        private static ListNode Merge(ListNode list1, ListNode list2)
         {
             var dummyHead = new ListNode();
             var tail = dummyHead;
@@ -36,7 +36,7 @@ namespace LeetCode._75
             return dummyHead.next;
         }
 
-        private ListNode GetMid(ListNode head)
+        private static ListNode GetMid(ListNode head)
         {
             ListNode midPrev = null;
             while (head != null && head.next != null)
@@ -47,6 +47,13 @@ namespace LeetCode._75
             ListNode mid = midPrev.next;
             midPrev.next = null;
             return mid;
+        }
+
+        public static void TestSolution()
+        {
+            // -1 -> 5 -> 3 -> 4 -> 0
+            ListNode head = new ListNode(-1, new ListNode(5, new ListNode(3, new ListNode(4, new ListNode(0)))));
+            var sorted = SortList(head);
         }
     }
 }

@@ -4,27 +4,43 @@ namespace LeetCode._75
 {
     internal class String_LongestCommonPrefix
     {
+        // Vertical Scanning
+        // O(S) time, where S is the sum of all characters in all strings.
+        // O(1) space
         public string LongestCommonPrefix(string[] strs)
         {
-            if (strs.Length == 1)
-                return strs[0];
-            int shortestLength = int.MaxValue;
-            foreach (var str in strs)
-                shortestLength = Math.Min(shortestLength, str.Length);
-
-            var longestCommonPrefix = new StringBuilder();
-            var first = strs[0];
-            for (int i = 0; i < shortestLength; i++)
+            if (strs == null || strs.Length == 0)
+                return string.Empty;
+            for (int i = 0; i < strs[0].Length; i++)
             {
-                var currentChar = first[i];
+                char c = strs[0][i];
                 for (int j = 1; j < strs.Length; j++)
                 {
-                    if (strs[j][i] != currentChar)
-                        return longestCommonPrefix.ToString();
+                    if (i == strs[j].Length || strs[j][i] != c)
+                        return strs[0].Substring(0, i);
                 }
-                longestCommonPrefix.Append(currentChar);
             }
-            return longestCommonPrefix.ToString();
+            return strs[0];
+        }
+
+        // Horizontal Scanning
+        // O(S) time, where S is the sum of all characters in all strings.
+        // O(1) space
+        public string LongestCommonPrefixV2(string[] strs)
+        {
+            if (strs == null || strs.Length == 0)
+                return string.Empty;
+            string prefix = strs[0];
+            for (int i = 1; i < strs.Length; i++)
+            {
+                while (strs[i].IndexOf(prefix) != 0)
+                {
+                    prefix = prefix.Substring(0, prefix.Length - 1);
+                    if (string.IsNullOrEmpty(prefix))
+                        return string.Empty;
+                }
+            }
+            return prefix;
         }
     }
 }
