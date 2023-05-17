@@ -91,7 +91,7 @@ namespace LeetCode._75
                 ans = AddStrings(MultiplyOneDigit(firstNumber, secondNumber[i], i), ans);
 
             if (ans[ans.Count - 1] == 0)
-                ans.Remove(ans.Count - 1);
+                ans.RemoveAt(ans.Count - 1);
 
             var answer = new StringBuilder();
             for (int i = ans.Count - 1; i >= 0; i--)

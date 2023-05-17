@@ -4,6 +4,7 @@ namespace LeetCode._75
 {
     internal class String_LongestCommonPrefix
     {
+        // https://leetcode.com/problems/longest-common-prefix/?envType=study-plan&id=level-2
         // Vertical Scanning
         // O(S) time, where S is the sum of all characters in all strings.
         // O(1) space

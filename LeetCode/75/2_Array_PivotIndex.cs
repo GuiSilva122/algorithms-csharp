@@ -2,6 +2,7 @@
 {
     public class Array_PivotIndex
     {
+        //https://leetcode.com/problems/find-pivot-index/
         public int FindPivotIndex(int[] nums)
         {
             var totalSum = 0;

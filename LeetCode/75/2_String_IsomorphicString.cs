@@ -5,6 +5,7 @@ namespace LeetCode._75
 {
     public class String_IsomorphicString
     {
+        //https://leetcode.com/problems/isomorphic-strings/
         // O(n) time, O(1) space
         public bool IsIsomorphicV1(string s, string t)
         {

@@ -32,5 +32,22 @@ namespace LeetCode._75
             }
             return root;
         }
+
+        public ListNode SwapPairs(ListNode head)
+        {
+            ListNode prev = new();
+            var first = head;
+            var second = head?.next;
+
+            head = second ?? first;
+
+            while (first != null && second != null)
+            {
+                (prev.next, first.next, second.next) = (second, second.next, first); //swap the nodes
+                (prev, first, second) = (first, first.next, first.next?.next); //move on
+            }
+
+            return head;
+        }
     }
 }

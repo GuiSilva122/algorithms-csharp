@@ -1,4 +1,6 @@
-﻿namespace LeetCode._75
+﻿using System.Linq;
+
+namespace LeetCode._75
 {
     public class String_LongestRepeatingCharacter
     {
@@ -133,6 +135,48 @@
             var s = "AABABBA";
             var k = 1;
             var result = CharacterReplacementV3(s, k);
+        }
+
+        public string DestCity(IList<IList<string>> paths)
+        {
+            var dict = new Dictionary<string, bool>();
+            foreach (var path in paths)
+            {
+                var startCity = path[0];
+                var destinyCity = path[1];
+                dict[startCity] = false;
+                if (!dict.ContainsKey(destinyCity))
+                {
+                    dict[destinyCity] = true;
+                }
+            }
+            return dict.FirstOrDefault().Key;
+        }
+
+        public bool IsPathCrossing(string path)
+        {
+            int x = 0;
+            int y = 0;
+            var dic = new Dictionary<(int, int), int>();
+            dic[(0, 0)]++;
+
+            foreach (char c in path)
+            {
+                _ = c switch
+                {
+                    'N' => y++,
+                    'S' => y--,
+                    'E' => x++,
+                    'W' => x--,
+                    _ => 0
+                };
+                
+                if (dic.ContainsKey((x, y))) 
+                    return true;
+                
+                dic[(x, y)]++;
+            }
+            return false;
         }
     }
 }

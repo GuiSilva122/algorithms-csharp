@@ -2,6 +2,7 @@
 {
     public class String_IsSubSequence
     {
+        // https://leetcode.com/problems/is-subsequence/description/
         private static string source;
         private static string target;
         private static int leftBound;
