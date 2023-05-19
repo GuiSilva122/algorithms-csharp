@@ -1,21 +1,9 @@
-﻿using System.Text;
+﻿using LeetCode._75.Helper;
 
 namespace LeetCode._75
 {
     public class Tree_ValidateBST
     {
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-            {
-                this.val = val;
-                this.left = left;
-                this.right = right;
-            }
-        }
         public bool IsValidBSTV1(TreeNode root)
         {
             return IsValidBSTRecursion(root, null);

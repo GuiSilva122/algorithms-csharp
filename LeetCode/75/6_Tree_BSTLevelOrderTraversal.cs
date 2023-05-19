@@ -1,20 +1,9 @@
-﻿namespace LeetCode._75
+﻿using LeetCode._75.Helper;
+
+namespace LeetCode._75
 {
     public class Tree_BSTLevelOrderTraversal
     {
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-            {
-                this.val = val;
-                this.left = left;
-                this.right = right;
-            }
-        }
-
         // Recursive
         // O(n) time, O(n) space
         public IList<IList<int>> LevelOrderV1(TreeNode root)
