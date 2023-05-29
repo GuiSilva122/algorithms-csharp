@@ -29,7 +29,7 @@
         {
             if (m == 0 || n == 0) return 0;
             if (m == 1 && n == 1) return 1;
-            var grid = GetGridMByN(m, n);
+            var grid = GetGridMByN(m + 1, n + 1);
             grid[1][1] = 1;
             for (int row = 0; row <= m; row++)
             {

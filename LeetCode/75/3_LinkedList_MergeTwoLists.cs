@@ -61,6 +61,9 @@ namespace LeetCode._75
             var l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
             var merged = MergeTwoLists(l1, l2);
             PrintLinkedList(merged);
+
+            var head = new ListNode(0, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))));
+            PrintLinkedList(head);
         }
     }
 }

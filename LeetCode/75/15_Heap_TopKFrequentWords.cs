@@ -1,7 +1,4 @@
-﻿using static LeetCode._75.Heap_TopKFrequentWords;
-using System.Diagnostics.Metrics;
-
-namespace LeetCode._75
+﻿namespace LeetCode._75
 {
     public class Heap_TopKFrequentWords
     {

@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace LeetCode._75
+﻿namespace LeetCode._75
 {
     public class String_LongestRepeatingCharacter
     {

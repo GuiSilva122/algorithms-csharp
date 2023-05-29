@@ -1,6 +1,4 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace LeetCode._75.Helper
+﻿namespace LeetCode._75.Helper
 {
     public class ListNode
     {
@@ -19,5 +17,8 @@ namespace LeetCode._75.Helper
 
             return val.ToString();
         }
+
+        public override string ToString()
+            => $"{val}->{next?.val.ToString() ?? "null" }";
     }
 }
