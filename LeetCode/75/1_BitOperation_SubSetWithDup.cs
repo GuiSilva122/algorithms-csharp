@@ -1,5 +1,4 @@
 ﻿using System.Text;
-using System.Xml.Linq;
 
 namespace LeetCode._75
 {
@@ -7,7 +6,7 @@ namespace LeetCode._75
     {
         // Bitmasking
         // O(n2^n) time, O(n2^n) space
-        public IList<IList<int>> SubsetsWithDupV1(int[] nums)
+        public static IList<IList<int>> SubsetsWithDupV1(int[] nums)
         {
             var subsets = new List<IList<int>>();
             int n = nums.Length;
@@ -41,7 +40,7 @@ namespace LeetCode._75
 
         // Cascading (Iterative)
         // O(n2^n) time, O(logn) space, because of sorting
-        public IList<IList<int>> SubsetsWithDupV2(int[] nums)
+        public static IList<IList<int>> SubsetsWithDupV2(int[] nums)
         {
             Array.Sort(nums);
             var subsets = new List<IList<int>>();
@@ -64,7 +63,7 @@ namespace LeetCode._75
 
         // Backtracking
         // O(n2^n) time, O(n) space
-        public IList<IList<int>> SubsetsWithDupV3(int[] nums)
+        public static IList<IList<int>> SubsetsWithDupV3(int[] nums)
         {
             Array.Sort(nums);
             var subsets = new List<IList<int>>();
@@ -73,7 +72,7 @@ namespace LeetCode._75
             return subsets;
         }
 
-        private void SubsetsWithDupHelper(List<IList<int>> subsets, List<int> currentSubset, int[] nums, int index)
+        private static void SubsetsWithDupHelper(List<IList<int>> subsets, List<int> currentSubset, int[] nums, int index)
         {
             subsets.Add(new List<int>(currentSubset));
 
@@ -86,6 +85,13 @@ namespace LeetCode._75
                 SubsetsWithDupHelper(subsets, currentSubset, nums, i + 1);
                 currentSubset.Remove(currentSubset.Last());
             }
+        }
+
+        public static void TestSolution()
+        {
+            var nums = new int[] { 1, 2, 2 };
+            var output = SubsetsWithDupV3(nums);
+            //Output: [[],[1],[1,2],[1,2,2],[2],[2,2]]
         }
     }
 }
