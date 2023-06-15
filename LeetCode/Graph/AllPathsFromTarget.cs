@@ -24,5 +24,35 @@
                 currentPath.Remove(currentPath.Last());
             }
         }
+
+        public static IList<IList<int>> AllPathsSourceTargetV2(int[][] graph)
+        {
+            IList<IList<int>> paths = new List<IList<int>>();
+            if (graph == null || graph.Length == 0)
+                return paths;
+            var path = new List<int> { 0 };
+            var queue = new Queue<List<int>>();
+            queue.Enqueue(path);
+            while (queue.Count > 0)
+            {
+                var currentPath = queue.Dequeue();
+                int currentNode = currentPath.Last();
+                foreach (var nextNode in graph[currentNode])
+                {
+                    var tempPath = new List<int>(currentPath) { nextNode };
+                    if (nextNode == graph.Length - 1)
+                        paths.Add(new List<int>(tempPath));
+                    else                    
+                        queue.Enqueue(new List<int>(tempPath));
+                }
+            }
+            return paths;
+        }
+
+        public static void TestSolution()
+        {
+            var graph = new int[][] { new int[] { 1, 2 }, new int[] { 3 }, new int[] { 3 }, new int[] { }};
+            var results = AllPathsSourceTargetV2(graph);
+        }
     }
 }

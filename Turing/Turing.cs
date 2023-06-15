@@ -6,7 +6,8 @@ namespace Turing
     {
         public static void Main()
         {
-            findJudgeTest();
+            //findJudgeTest();
+            Turing2.TestSolution();
         }
 
         public static void findJudgeTest()
