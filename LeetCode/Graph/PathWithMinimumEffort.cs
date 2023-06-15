@@ -2,6 +2,7 @@
 {
     public class PathWithMinimumEffort
     {
+        // O(mn(log mn)) time, O(mn) space
         public static int MinimumEffortPath(int[][] heights)
         {
             int row = heights.Length;
@@ -88,7 +89,13 @@
 
         public static void TestSolution()
         {
-
+            var heights = new int[][]
+            {
+                new int[] { 1, 2, 2 },
+                new int[] { 3, 8, 2 },
+                new int[] { 5, 3, 5 }
+            };
+            var minimumEffort = MinimumEffortPath(heights);
         }
     }
 }
