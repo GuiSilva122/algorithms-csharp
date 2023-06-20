@@ -1,24 +1,7 @@
-﻿namespace LeetCode.LinkedList
+﻿using LeetCode._75.Helper;
+
+namespace LeetCode.LinkedList
 {
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-
-        public string PrintForward()
-        {
-            if (next != null)
-                return val + " -> " + next.PrintForward();
-
-            return val.ToString();
-        }
-    }
-
     public static class MergeTwoLinkedLists
     {
         // time O(m + n), space O(m + n)

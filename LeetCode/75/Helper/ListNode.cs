@@ -20,5 +20,18 @@
 
         public override string ToString()
             => $"{val}->{next?.val.ToString() ?? "null" }";
+
+        public static ListNode GetListNodeFromArray(int[] nums)
+        {
+            var head = new ListNode();
+            var current = head;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                current.val = nums[i];
+                current.next = new ListNode();
+                current = current.next;
+            }
+            return head;
+        }
     }
 }
