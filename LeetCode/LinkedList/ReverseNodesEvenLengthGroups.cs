@@ -4,7 +4,7 @@ namespace LeetCode.LinkedList
 {
     public class ReverseNodesEvenLengthGroups
     {
-        public ListNode ReverseEvenLengthGroups(ListNode head)
+        public static ListNode ReverseEvenLengthGroups(ListNode head)
         {
             var dummy = new ListNode(0, head);
             var groupPrev = dummy;
@@ -39,7 +39,7 @@ namespace LeetCode.LinkedList
             return dummy.next;
         }
 
-        private (ListNode, int) GetKthNode(ListNode current, int k)
+        private static (ListNode, int) GetKthNode(ListNode current, int k)
         {
             int count = k;
             while (current != null && current.next != null && k > 0)
