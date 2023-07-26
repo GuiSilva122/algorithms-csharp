@@ -2,4 +2,4 @@
 using LeetCode.Graph;
 using LeetCode.LinkedList;
 
-ReverseNodesEvenLengthGroups.TestSolution();
+RemoveLinkedListElements.TestSolution();
